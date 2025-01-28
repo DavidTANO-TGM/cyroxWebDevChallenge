@@ -56,7 +56,7 @@
         </li>
     @elseif(principal()->isDentist())
         <li class="nav-item">
-            <a class="nav-link" href="javascript:;">
+            <a class="nav-link" href="{{ route('clinic.dentist.patients.index', clinic('id')) }}">
                 <i class="fas fa-fw fa-heartbeat"></i>
                 <span>Patients</span>
             </a>

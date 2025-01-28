@@ -137,3 +137,4 @@ Route::post(RoutePath::for('password.confirm', '/user/confirm-password'), [Confi
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('home');
 Route::get('diagnosis/treatment-plans', [DentistController::class, 'getTreatmentPlans'])->name('dentist.plans.index');
+Route::get('diagnosis/patients', [DentistController::class, 'getPatients'])->name('dentist.patients.index');
